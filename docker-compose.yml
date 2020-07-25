@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  bot-app:
+    build: .
+    container_name: 'node'
+    working_dir: '/app/'
+    volumes:
+      - .:/app
+    environment:
+      TWITTER_CONSUME_KEY: $TWITTER_CONSUME_KEY
+      TWITEER_CONSUME_SECRET: $TWITEER_CONSUME_SECRET
+      TWITTER_ACCESS_TOKEN_KEY: $TWITTER_ACCESS_TOKEN_KEY
+      TWITTER_ACCESS_TOKEN_SECRET: $TWITTER_ACCESS_TOKEN_SECRET
