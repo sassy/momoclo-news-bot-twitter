@@ -16,6 +16,9 @@ jobs:
       with:
         path: '/tmp/path/cache'
         key: ${{ runner.os }}-${{ hashFiles('Dockerfile') }}
+        
+    - name: Install node dependencies
+      run: yarn install --frozen-lockfile
 
     - name: docker-compose up
       run: docker-compose up
