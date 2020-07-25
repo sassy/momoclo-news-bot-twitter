@@ -14,7 +14,9 @@ jobs:
       id: cache-docker-image
       uses: actions/cache@v2
       with:
+        path: '/tmp/path/cache'
         key: ${{ runner.os }}-${{ hashFiles('Dockerfile') }}
+
     - name: docker-compose up
       run: docker-compose up
       env:
