@@ -15,7 +15,7 @@
     "@types/twitter": "^1.7.0",
     "node-fetch": "^2.6.7",
     "prettier": "^2.0.5",
-    "rxjs": "^6.6.0",
+    "rxjs": "^7.0.0",
     "ts-node": "^9.0.0",
     "twitter": "^1.7.1",
     "typescript": "^4.0.0"
