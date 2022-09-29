@@ -55,7 +55,7 @@ stream$.pipe(
 ).subscribe(
     (result: NewsData[]) => {
         result.forEach((data: NewsData) => {
-            const status = data.date + `\n` + data.title + `\n` + "#momoclo" + `\n` + data.url;
+            const status = data.date + `\n` + data.title + `\n` + data.url;
             const params :twitter.RequestParams = {
                 status: status
             };
