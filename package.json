@@ -10,7 +10,7 @@
     "start": "ts-node --transpile-only src/main.ts"
   },
   "dependencies": {
-    "@types/node": "^16.0.0",
+    "@types/node": "^18.0.0",
     "@types/node-fetch": "^2.5.7",
     "@types/twitter": "^1.7.0",
     "node-fetch": "^3.0.0",
